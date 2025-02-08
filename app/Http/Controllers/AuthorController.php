@@ -14,7 +14,6 @@ class AuthorController extends Controller
     public function __construct()
     {
         $this->apiUrl = env('CANDIDATE_API_URL');
-        $this->apiToken = Session::get('api_token');
     }
 
     // Fetch and display authors
