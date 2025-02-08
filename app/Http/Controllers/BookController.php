@@ -9,12 +9,10 @@ use Illuminate\Support\Facades\Session;
 class BookController extends Controller
 {
     private $apiUrl;
-    private $apiToken;
 
     public function __construct()
     {
         $this->apiUrl = env('CANDIDATE_API_URL');
-        $this->apiToken = Session::get('api_token');
     }
 
     // Delete a book
