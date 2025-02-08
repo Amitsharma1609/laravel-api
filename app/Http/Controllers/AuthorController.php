@@ -9,7 +9,6 @@ use Illuminate\Support\Facades\Session;
 class AuthorController extends Controller
 {
     private $apiUrl;
-    private $apiToken;
 
     public function __construct()
     {
